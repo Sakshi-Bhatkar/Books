@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookish</title>
+
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <!--font awesome links-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="./CSS/Style.css">
@@ -33,14 +35,66 @@
                 <a href="#Featured">Featured</a>
                 <a href="#Arrivals">Arrivals</a>
                 <a href="#Reviews">Reviews</a>
-                <a href="#Contact">Contact Us</a>
+                <a href="#Blog">Blog</a>
             </nav>
         </div>
     </header>
 
+    <!--bottom navbar-->
+    <nav class="bottom-navbar">
+        <a href="#Home" class="fas fa-home"></a>
+        <a href="#Featured" class="fas fa-list"></a>
+        <a href="#Arrivals" class="fas fa-tags"></a>
+        <a href="#Reviews" class="fas fa-comments"></a>
+        <a href="#Blog" class="fas fa-blog"></a>
+    </nav>
+  <!--login form-->
+  <div class="login-form-container">
+    <div id="close-login-btn" class="fas fa-times"></div> 
+    <form action="">
+        <h3>Sign in</h3>
+        <span>Username</span>
+        <input type="email" name="" class="box" placeholder="Enter your EmailID" id="">
+        <span>Password</span>
+        <input type="Password" name="" class="box" placeholder="Enter your Password" id="">
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">Remember Me</label>
+        </div>
+        <input type="submit" value="sign in" class="btn">
+        <p>Forget Password? <a href="#">Click Here</a></p>
+        <p>Don't have an accout? <a href="#">Create One</a></p>
+    </form>
+  </div> 
+  <!--Home section-->
+  <section class="home" id="Home">
+    <div class="row">
+        <div class="content">
+            <h3>Upto 75% Off!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam in quia nemo consequuntur nesciunt explicabo tenetur, culpa cumque maxime expedita quidem illo suscipit eius harum voluptas odio. Dignissimos, et modi?</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
     
+    <div class=" swiper books-slider">
+        <div class="swiper-wraper">
+            <a href="#" class="swiper-slide"><img src="./Image/book-1.png" alt=""></a>
+            <a href="#" class="swiper-slide" ><img src="./Image/book-2.png" alt=""></a>
+            <a href="#" class="swiper-slide"><img src="./Image/book-3.png" alt=""></a>
+            <a href="#" class="swiper-slide"><img src="./Image/book-4.png" alt=""></a>
+            <a href="#" class="swiper-slide"><img src="./Image/book-5.png" alt=""></a>
+            <a href="#" class="swiper-slide"><img src="./Image/book-6.png" alt=""></a>
+        </div>
+        <img src="./Image/stand.png" class="stand" alt="">
+    </div>
+</div>
+
+  </section>
+
+
+
 
     <!--Custom js-->
     <script src="./Js/Script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>
